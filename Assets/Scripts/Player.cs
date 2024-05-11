@@ -21,5 +21,8 @@ public class Player : MonoBehaviour
         {
             _rb.velocity = Vector2.up * _jumpForce;
         }
+
     }
+
+
 }
