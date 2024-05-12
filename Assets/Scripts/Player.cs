@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
             _rb.velocity = Vector2.up * _jumpForce;
         }
 
-        transform.rotation = Quaternion.Euler(0, 0, _rb.velocity.y * _rotaionSpeed);
+        transform.rotation = Quaternion.Euler(0, 0, _rb.velocity.y * _rotationSpeed);
     }
 
 
