@@ -16,13 +16,13 @@ public class Player : MonoBehaviour
         float jumpInput = Input.GetAxis("Jump");
 
         transform.Translate(Vector3.up * jumpInput * _jumpForce * Time.deltaTime); */
+       
 
         if (Input.GetKey("space"))
         {
             _rb.velocity = Vector2.up * _jumpForce;
         }
-
     }
 
-
+   
 }
