@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
         float jumpInput = Input.GetAxis("Jump");
 
         transform.Translate(Vector3.up * jumpInput * _jumpForce * Time.deltaTime); */
+       
 
         if (Input.GetKey("space"))
         {
@@ -24,5 +25,5 @@ public class Player : MonoBehaviour
         transform.rotation = Quaternion.Euler(0,0,_rb.velocity.y * _rotaionSpeed);
     }
 
-
+   
 }
