@@ -23,6 +23,8 @@ public class Player : MonoBehaviour
         }
 
         transform.rotation = Quaternion.Euler(0,0,_rb.velocity.y * _rotaionSpeed);
+
+        Debug.Log("Testing");
     }
 
    
