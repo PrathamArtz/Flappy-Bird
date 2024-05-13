@@ -4,19 +4,6 @@ using UnityEngine;
 
 public class PipesSpawner : MonoBehaviour
 {
-<<<<<<< Updated upstream
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-=======
     [SerializeField] private float _maxTime = 3f;
     private float _topHeightRange = 0.5f;
     private float _bottomHeightRange = -0.4f;
@@ -64,5 +51,4 @@ public class PipesSpawner : MonoBehaviour
         }
     }
 
->>>>>>> Stashed changes
 }
