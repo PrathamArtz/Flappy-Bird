@@ -8,7 +8,11 @@ public class Player : MonoBehaviour
     [SerializeField] private Rigidbody2D _rb;
     [SerializeField] private float _rotationSpeed = 10.0f;
 
-    // Update is called once per frame
+
+    private void Start()
+    {
+        transform.position = new Vector3(0,0,0);
+    }
     private void FixedUpdate()
     {
         /*
@@ -17,15 +21,20 @@ public class Player : MonoBehaviour
         transform.Translate(Vector3.up * jumpInput * _jumpForce * Time.deltaTime); */
        
 
-        if (Input.GetKey("space"))
+
+        if (Input.GetKey("space") || Input.GetMouseButton(0) )
         {
-            _rb.velocity = Vector2.up * _jumpForce;
+            _rb.velocity = Vector3.up * _jumpForce;
         }
 
         transform.rotation = Quaternion.Euler(0,0,_rb.velocity.y * _rotationSpeed);
 
-        Debug.Log("Testing");
+       // Debug.Log("Testing");
     }
 
-   
+    private void Update()
+    {
+       
+    }
+
 }
